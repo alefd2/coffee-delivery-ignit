@@ -6,7 +6,7 @@
       "description": "O tradicional café feito com água quente e grãos moídos.",
       "label": ["Tradicional"],
       "price": 9.90,
-      "image": "https://raw.githubusercontent.com/tavareshenrique/ignite-reactjs-challenge-02-coffee-delivery/0b6705642cf8d8128d6c44eacfb41d39e0c76e01/src/assets/img/coffee-menu/traditional-espresso.svg"
+      "image": "src/assets/img/coffee-menu/traditional-espresso.svg"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "description": "Expresso diluído, menos intenso que o tradicional.",
       "label": ["Tradicional"],
       "price": 9.90,
-      "image": "https://raw.githubusercontent.com/tavareshenrique/ignite-reactjs-challenge-02-coffee-delivery/0b6705642cf8d8128d6c44eacfb41d39e0c76e01/src/assets/img/coffee-menu/american-espresso.svg"
+      "image": "src/assets/img/coffee-menu/american-espresso.svg"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "description": "Café express tradicional com espuma cremosa.",
       "label": ["Tradicional"],
       "price": 9.90,
-      "image": "https://raw.githubusercontent.com/tavareshenrique/ignite-reactjs-challenge-02-coffee-delivery/0b6705642cf8d8128d6c44eacfb41d39e0c76e01/src/assets/img/coffee-menu/creamy-espresso.svg"
+      "image": "src/assets/img/coffee-menu/creamy-espresso.svg"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "description": "Bebida preparada com café expresso e cubos de gelo.",
       "label": ["Tradicional", "Gelado"],
       "price": 9.90,
-      "image": "https://raw.githubusercontent.com/tavareshenrique/ignite-reactjs-challenge-02-coffee-delivery/0b6705642cf8d8128d6c44eacfb41d39e0c76e01/src/assets/img/coffee-menu/ice-espresso.svg"
+      "image": "src/assets/img/coffee-menu/ice-espresso.svg"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "description": "Meio a meio de expresso tradicional com leite vaporizado.",
       "label": ["Tradicional", "Com Leite"],
       "price": 9.90,
-      "image": "https://raw.githubusercontent.com/tavareshenrique/ignite-reactjs-challenge-02-coffee-delivery/0b6705642cf8d8128d6c44eacfb41d39e0c76e01/src/assets/img/coffee-menu/coffe-milk.svg"
+      "image": "src/assets/img/coffee-menu/coffe-milk.svg"
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "description": "Uma dose de café expresso com o dobro de leite e espuma cremosa.",
       "label": ["Tradicional", "Com Leite"],
       "price": 9.90,
-      "image": "https://raw.githubusercontent.com/tavareshenrique/ignite-reactjs-challenge-02-coffee-delivery/0b6705642cf8d8128d6c44eacfb41d39e0c76e01/src/assets/img/coffee-menu/latte.svg"
+      "image": "src/assets/img/coffee-menu/latte.svg"
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "description": "Bebida com canela feita de doses iguais de café, leite e espuma.",
       "label": ["Tradicional", "Com Leite"],
       "price": 9.90,
-      "image": "https://raw.githubusercontent.com/tavareshenrique/ignite-reactjs-challenge-02-coffee-delivery/0b6705642cf8d8128d6c44eacfb41d39e0c76e01/src/assets/img/coffee-menu/capuccino.svg"
+      "image": "src/assets/img/coffee-menu/capuccino.svg"
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@
       "description": "Café expresso misturado com um pouco de leite quente e espuma.",
       "label": ["Tradicional", "Com Leite"],
       "price": 9.90,
-      "image": "https://raw.githubusercontent.com/tavareshenrique/ignite-reactjs-challenge-02-coffee-delivery/0b6705642cf8d8128d6c44eacfb41d39e0c76e01/src/assets/img/coffee-menu/macchiato.svg"
+      "image": "src/assets/img/coffee-menu/macchiato.svg"
     },
     {
       "id": 9,
@@ -70,7 +70,7 @@
       "description": "Café expresso com calda de chocolate, pouco leite e espuma.",
       "label": ["Tradicional", "Com Leite"],
       "price": 9.90,
-      "image": "https://raw.githubusercontent.com/tavareshenrique/ignite-reactjs-challenge-02-coffee-delivery/0b6705642cf8d8128d6c44eacfb41d39e0c76e01/src/assets/img/coffee-menu/mocaccino.svg"
+      "image": "src/assets/img/coffee-menu/mocaccino.svg"
     },
     {
       "id": 10,
@@ -78,7 +78,7 @@
       "description": "Bebida feita com chocolate dissolvido no leite quente e café.",
       "label": ["Tradicional", "Com Leite"],
       "price": 9.90,
-      "image": "https://raw.githubusercontent.com/tavareshenrique/ignite-reactjs-challenge-02-coffee-delivery/0b6705642cf8d8128d6c44eacfb41d39e0c76e01/src/assets/img/coffee-menu/hot-chocolate.svg"
+      "image": "src/assets/img/coffee-menu/hot-chocolate.svg"
     },
     {
       "id": 11,
@@ -86,7 +86,7 @@
       "description": "Drink gelado de café expresso com rum, creme de leite e hortelã.",
       "label": ["Especial", "Alcoólico", "Gelado"],
       "price": 9.90,
-      "image": "https://raw.githubusercontent.com/tavareshenrique/ignite-reactjs-challenge-02-coffee-delivery/0b6705642cf8d8128d6c44eacfb41d39e0c76e01/src/assets/img/coffee-menu/cubano.svg"
+      "image": "src/assets/img/coffee-menu/cubano.svg"
     },
     {
       "id": 12,
@@ -94,7 +94,7 @@
       "description": "Bebida adocicada preparada com café e leite de coco.",
       "label": ["Especial"],
       "price": 9.90,
-      "image": "https://raw.githubusercontent.com/tavareshenrique/ignite-reactjs-challenge-02-coffee-delivery/0b6705642cf8d8128d6c44eacfb41d39e0c76e01/src/assets/img/coffee-menu/havaiano.svg"
+      "image": "src/assets/img/coffee-menu/havaiano.svg"
     },
     {
       "id": 13,
@@ -102,7 +102,7 @@
       "description": "Bebida preparada com grãos de café árabe e especiarias.",
       "label": ["Especial"],
       "price": 9.90,
-      "image": "https://raw.githubusercontent.com/tavareshenrique/ignite-reactjs-challenge-02-coffee-delivery/0b6705642cf8d8128d6c44eacfb41d39e0c76e01/src/assets/img/coffee-menu/arabe.svg"
+      "image": "src/assets/img/coffee-menu/arabe.svg"
     },
     {
       "id": 14,
@@ -110,7 +110,7 @@
       "description": "Bebida a base de café, uísque irlandês e açucar e chantily.",
       "label": ["Especial", "Alcoólico"],
       "price": 9.90,
-      "image": "https://raw.githubusercontent.com/tavareshenrique/ignite-reactjs-challenge-02-coffee-delivery/0b6705642cf8d8128d6c44eacfb41d39e0c76e01/src/assets/img/coffee-menu/irlandes.svg"
+      "image": "src/assets/img/coffee-menu/irlandes.svg"
     }
   ]
 }

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { forwardRef, useCallback, useEffect, useState } from "react";
 
 import { useFormContext, Controller } from "react-hook-form";
