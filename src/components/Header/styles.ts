@@ -5,8 +5,10 @@ export const HeaderContainer = styled.header`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-
-  margin-bottom: 2rem;
+  max-width: 75.1em;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
 
   > button {
     all: unset;
