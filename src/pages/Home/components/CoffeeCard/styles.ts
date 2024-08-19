@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const CoffeeCardContainer = styled.div`
   display: flex;
@@ -14,12 +14,8 @@ export const CoffeeCardContainer = styled.div`
   width: 288px;
 
   background-color: ${(props) => props.theme["base-card"]};
-
-  border-top-left-radius: 6px;
-  border-top-right-radius: 36px;
-  border-bottom-left-radius: 36px;
-  border-bottom-right-radius: 6px;
-`;
+  border-radius: 6px 40px;
+`
 
 export const CoffeeCardHeader = styled.header`
   position: relative;
@@ -29,11 +25,7 @@ export const CoffeeCardHeader = styled.header`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  /* @media only screen and (max-width: 768px) {
-    top: 1080px;
-  } */
-`;
+`
 
 export const CoffeeLabelContent = styled.div`
   display: flex;
@@ -44,7 +36,7 @@ export const CoffeeLabelContent = styled.div`
   span {
     margin-left: 4px;
   }
-`;
+`
 
 export const CoffeeLabel = styled.span`
   margin-top: 12px;
@@ -61,7 +53,7 @@ export const CoffeeLabel = styled.span`
   padding: 8px;
 
   border-radius: 50px;
-`;
+`
 
 export const CoffeeBody = styled.div`
   position: relative;
@@ -71,14 +63,14 @@ export const CoffeeBody = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`;
+`
 
 export const CoffeeTitle = styled.h2`
   font-family: "Baloo 2", cursive;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 130%;
-`;
+`
 
 export const CoffeeDescription = styled.p`
   font-family: "Roboto", sans-serif;
@@ -91,7 +83,7 @@ export const CoffeeDescription = styled.p`
   margin-top: 8px;
 
   color: ${(props) => props.theme["base-label"]};
-`;
+`
 
 export const CoffeeFooter = styled.footer`
   display: flex;
@@ -100,7 +92,7 @@ export const CoffeeFooter = styled.footer`
   justify-content: space-between;
 
   width: 100%;
-`;
+`
 
 export const PriceContainer = styled.div`
   display: flex;
@@ -125,7 +117,7 @@ export const PriceContainer = styled.div`
     line-height: 130%;
     color: ${(props) => props.theme["base-text"]};
   }
-`;
+`
 export const PurchaseContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -139,4 +131,4 @@ export const PurchaseContainer = styled.div`
       color: ${(props) => props.theme["base-card"]};
     }
   }
-`;
+`

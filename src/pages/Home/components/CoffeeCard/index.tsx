@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { ShoppingCart, Minus, Plus } from "phosphor-react";
+import { ShoppingCart } from "phosphor-react";
 
 import { useCoffee } from "../../../../hooks/useCoffee";
 
