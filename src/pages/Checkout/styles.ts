@@ -5,7 +5,9 @@ export const CheckoutContainer = styled.form`
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  max-width: 85rem;
+
+  max-width: 80rem;
+  width: 100%;
   gap: 50px;
   margin: 0 auto;
 

@@ -1,7 +1,11 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Container = styled.div`
   padding-top: 80px;
+
+  max-width: 80rem;
+  width: 100%;
+  margin: 0 auto;
 
   h1 {
     font-family: "Baloo 2", cursive;
@@ -31,7 +35,7 @@ export const Container = styled.div`
       font-size: 1rem;
     }
   }
-`;
+`
 
 export const Content = styled.main`
   display: flex;
@@ -46,7 +50,7 @@ export const Content = styled.main`
 
     margin-top: 2rem;
   }
-`;
+`
 
 export const RightSide = styled.div`
   width: 80%;
@@ -54,7 +58,7 @@ export const RightSide = styled.div`
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
-`;
+`
 
 export const LeftSide = styled.div`
   @media only screen and (max-width: 768px) {
@@ -64,7 +68,7 @@ export const LeftSide = styled.div`
       width: 100%;
     }
   }
-`;
+`
 
 export const DetailContent = styled.div`
   position: relative;
@@ -98,7 +102,7 @@ export const DetailContent = styled.div`
 
     width: 100%;
   }
-`;
+`
 
 export const DetailValuesContent = styled.div`
   display: flex;
@@ -111,11 +115,11 @@ export const DetailValuesContent = styled.div`
   > div {
     margin-right: 12px;
   }
-`;
+`
 
 export const InformationContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-`;
+`
