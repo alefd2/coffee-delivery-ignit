@@ -1,21 +1,18 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
 import { useForm, FormProvider } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 
 import { MapPinLine, CurrencyDollar } from "phosphor-react";
-
 import { useCoffee } from "../../hooks/useCoffee";
-
 import { PaymentSelect, TSelectPayment } from "../../components/PaymentSelect";
-
 import {
   CheckoutAddress,
   CheckoutCardHeader,
   CheckoutEmptyList,
   CheckoutDetails,
 } from "./components";
-
 import {
   CardContainer,
   CheckoutContainer,
@@ -26,30 +23,33 @@ import {
   Title,
 } from "./styles";
 
-export type TAddress = {
-  cep: string;
-  rua: string;
-  numero: string;
-  complemento?: string;
-  bairro: string;
-  cidade: string;
-  uf: string;
-};
+// Define the Yup validation schema
+const schema = yup.object().shape({
+  cep: yup.string().required("CEP obrigatório"),
+  rua: yup.string().required("Rua obrigatória"),
+  numero: yup.string().required("Número obrigatório"),
+  complemento: yup.string().optional(),
+  bairro: yup.string().required("Bairro obrigatório"),
+  cidade: yup.string().required("Cidade obrigatória"),
+  uf: yup.string().required("UF obrigatório"),
+});
+
+export type TAddress = yup.InferType<typeof schema>;
 
 export type TFormData = TAddress;
 
 export function Checkout() {
   const navigate = useNavigate();
-
   const { coffeeList, handleCheckout } = useCoffee();
-
   const [selectedPayment, setSelectedPayment] = useState<TSelectPayment | null>(
     null
   );
 
   const coffeeListIsEmpty = coffeeList && coffeeList.length > 0;
 
-  const methods = useForm<TFormData>();
+  const methods = useForm<TFormData>({
+    resolver: yupResolver(schema),
+  });
 
   const { handleSubmit } = methods;
 
@@ -57,51 +57,9 @@ export function Checkout() {
     setSelectedPayment(paymentType);
   }
 
-  function validateAddress(data: TAddress) {
-    console.log("entrou");
-    const errors: Partial<TAddress> = {};
-
-    if (!data.cep) {
-      errors.cep = "CEP obrigatório";
-    }
-
-    if (!data.rua) {
-      errors.rua = "Rua obrigatória";
-    }
-
-    if (!data.numero) {
-      errors.numero = "Número obrigatório";
-    }
-
-    if (!data.bairro) {
-      errors.bairro = "Bairro obrigatório";
-    }
-
-    if (!data.cidade) {
-      errors.cidade = "Cidade obrigatória";
-    }
-
-    if (!data.uf) {
-      errors.uf = "UF obrigatório";
-    }
-
-    return errors;
-  }
-
   function onSubmit(data: TAddress) {
-    console.log("entrou 1");
-
-    const errors = validateAddress(data);
-
-    if (Object.keys(errors).length > 0) {
-      alert("Preencha todos os campos do endereço");
-
-      return;
-    }
-
     if (!selectedPayment) {
       alert("Selecione uma forma de pagamento");
-
       return;
     }
 

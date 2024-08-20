@@ -17,17 +17,18 @@ export function Header() {
 
   const navigate = useNavigate();
 
-  const handleGoToCheckout = () => {
+  const handleToCheckout = () => {
+    if (coffeeQuantity < 1) return;
     navigate("/checkout");
   };
 
-  const handleGoToHome = () => {
+  const handleToHome = () => {
     navigate("/");
   };
 
   return (
     <HeaderContainer>
-      <button type="button" onClick={handleGoToHome}>
+      <button type="button" onClick={handleToHome}>
         <img
           src={coffeeDeliveryLogo}
           alt="Imagem de um copo de café roxo com um simbolo de um foguete e ao lado escrito Coffee Delivery"
@@ -46,7 +47,7 @@ export function Header() {
         <Button
           color="yellow-light"
           className="cart__button"
-          onClick={handleGoToCheckout}
+          onClick={handleToCheckout}
         >
           <ShoppingCart
             size={22}

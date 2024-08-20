@@ -4,7 +4,10 @@ export const CheckoutContainer = styled.form`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
+  max-width: 85rem;
+  gap: 50px;
+  margin: 0 auto;
 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
